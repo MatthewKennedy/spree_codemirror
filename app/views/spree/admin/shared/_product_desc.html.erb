@@ -8,7 +8,7 @@
 
         this.initializeEditor = function() {
           var codeMirror = CodeMirror.fromTextArea(document.getElementById("product_description"), {
-            lineNumbers: true,
+            //lineNumbers: true,
             htmlMode: true,
             autoCloseTags: true,
 
@@ -32,8 +32,8 @@
             }
 
           });
-          codeMirror.setSize($('.admin-editor-section').width(), 800);
-          codeMirror.setSize($('.admin-editor-section').height(), 600);
+
+          codeMirror.setSize($('.admin-editor-section').height(), 400);
         }
       }
 
