@@ -1,3 +1,4 @@
+<% if Spree::Config.show_raw_product_description %>
 <script>
       function PageBody() {
 
@@ -6,7 +7,7 @@
         }
 
         this.initializeEditor = function() {
-          var codeMirror = CodeMirror.fromTextArea(document.getElementById("code"), {
+          var codeMirror = CodeMirror.fromTextArea(document.getElementsByTagName("textarea")[0], {
             lineNumbers: true,
             htmlMode: true,
             autoCloseTags: true,
@@ -40,3 +41,4 @@
             new PageBody().init();
           };
 </script>
+<% end %>
