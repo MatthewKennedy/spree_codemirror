@@ -9,6 +9,7 @@
 //= require 'spree/backend/codemirror/markdown'
 //= require 'spree/backend/codemirror/fullscreen'
 //= require 'spree/backend/codemirror/closetag'
+//= require 'spree/backend/codemirror/closebrackets'
 //= require 'spree/backend/codemirror/matchtags'
 
 //= require 'spree/backend/codemirror/css'

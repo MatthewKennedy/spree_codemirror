@@ -10,11 +10,10 @@
           lineNumbers: true,
           htmlMode: true,
           autoCloseTags: true,
-
+          autoCloseBrackets: true,
           matchTags: {
             bothTags: true
           },
-
           extraKeys: {
             "Ctrl-J": "toMatchingTag",
             "Ctrl-Enter": function(cm) {
@@ -24,7 +23,6 @@
             if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);
             }
           },
-
           mode: {
             name: "htmlmixed",
             globalVars: true
