@@ -6,7 +6,7 @@ Introduction goes here.
 
 1. Add this extension to your Gemfile with this line:
   ```ruby
-  gem 'spree_codemirror', github: '[your-github-handle]/spree_codemirror'
+  gem 'spree_codemirror', github: 'matthewkennedy/spree_codemirror'
   ```
 
 2. Install the gem using Bundler:
