@@ -1,7 +1,3 @@
-// Placeholder manifest file.
-// the installer will append this file to the app vendored assets here: vendor/assets/javascripts/spree/backend/all.js'
-
-
 //= require 'spree/backend/codemirror/codemirror'
 //= require 'spree/backend/codemirror/ruby'
 //= require 'spree/backend/codemirror/selection-pointer'

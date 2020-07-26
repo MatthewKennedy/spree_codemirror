@@ -1,6 +1,5 @@
 
     function ProductDesc() {
-
       this.init = function() {
         this.initializeEditor();
       }
@@ -10,11 +9,10 @@
           lineNumbers: true,
           htmlMode: true,
           autoCloseTags: true,
-
+          autoCloseBrackets: true,
           matchTags: {
             bothTags: true
           },
-
           extraKeys: {
             "Ctrl-J": "toMatchingTag",
             "Ctrl-Enter": function(cm) {
@@ -24,7 +22,6 @@
             if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);
             }
           },
-
           mode: {
             name: "htmlmixed",
             globalVars: true
@@ -36,6 +33,6 @@
       }
     }
 
-    window.onload = function() {
-          new ProductDesc().init();
-        };
+    document.addEventListener('DOMContentLoaded', function(event) {
+      new ProductDesc().init();
+    };

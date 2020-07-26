@@ -1,6 +1,5 @@
 
     function Main() {
-
       this.init = function() {
         this.initializeEditor();
       }
@@ -34,6 +33,6 @@
       }
     }
 
-    $(document).ready(function() {
+    document.addEventListener('DOMContentLoaded', function(event) {
       new Main().init();
     });
