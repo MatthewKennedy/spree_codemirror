@@ -19,8 +19,7 @@ Introduction goes here.
   bundle exec rails g spree_codemirror:install
   ```
 
-4. Set Product Description to Raw
-  Withing the spree.rb initilizer file, set the following config to true.
+4. Set the product description to raw withing the spree.rb initilizer file.
   ```ruby
   # Example:
   Spree.config do |config|
