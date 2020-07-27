@@ -19,7 +19,17 @@ Introduction goes here.
   bundle exec rails g spree_codemirror:install
   ```
 
-4. Restart your server
+4. Set Product Description to Raw
+  Withing the spree.rb initilizer file, set the following config to true.
+  ```ruby
+  # Example:
+  Spree.config do |config|
+
+    config.show_raw_product_description = true
+  end
+  ```
+
+5. Restart your server
 
   If your server was running, restart it so that it can find the assets properly.
 
