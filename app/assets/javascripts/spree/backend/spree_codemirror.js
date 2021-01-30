@@ -28,7 +28,7 @@ function SpreeCodeMirror(target_id, code_area_height = 500) {
 
   this.initializeEditor = function() {
     var codeMirror = CodeMirror.fromTextArea(document.getElementById(target_id), {
-      //lineNumbers: true,
+      lineNumbers: true,
       htmlMode: true,
       autoCloseTags: true,
 
