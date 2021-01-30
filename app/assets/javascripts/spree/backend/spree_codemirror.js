@@ -21,7 +21,7 @@
 //= require 'spree/backend/codemirror/xml'
 //= require 'spree/backend/codemirror/xml-fold'
 
-function SpreeCodeMirror(target_id, code_area_height = 500) {
+function SpreeCodeMirror(target_id) {
   this.init = function() {
     this.initializeEditor();
   }
@@ -52,6 +52,6 @@ function SpreeCodeMirror(target_id, code_area_height = 500) {
       }
 
     });
-    codeMirror.setSize($('.admin-editor-section').height(), code_area_height);
+    codeMirror.setSize($('.admin-editor-section').height(), 500);
   }
 }
