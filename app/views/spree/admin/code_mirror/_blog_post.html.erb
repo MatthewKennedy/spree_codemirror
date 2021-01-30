@@ -1,0 +1,7 @@
+<% if SpreeBlogs::Config.use_raw_post_content %>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(event) {
+     new SpreeCodeMirror("post_content").init();
+    });
+  </script>
+<% end %>

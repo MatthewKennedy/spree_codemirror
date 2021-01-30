@@ -20,3 +20,38 @@
 //= require 'spree/backend/codemirror/vbscript'
 //= require 'spree/backend/codemirror/xml'
 //= require 'spree/backend/codemirror/xml-fold'
+
+function SpreeCodeMirror(target_id, code_area_height = 500) {
+  this.init = function() {
+    this.initializeEditor();
+  }
+
+  this.initializeEditor = function() {
+    var codeMirror = CodeMirror.fromTextArea(document.getElementById(target_id), {
+      //lineNumbers: true,
+      htmlMode: true,
+      autoCloseTags: true,
+
+      matchTags: {
+        bothTags: true
+      },
+
+      extraKeys: {
+        "Ctrl-J": "toMatchingTag",
+        "Ctrl-Enter": function(cm) {
+          cm.setOption("fullScreen", !cm.getOption("fullScreen"));
+        },
+        "Esc": function(cm) {
+          if (cm.getOption("fullScreen")) cm.setOption("fullScreen", false);
+        }
+      },
+
+      mode: {
+        name: "htmlmixed",
+        globalVars: true
+      }
+
+    });
+    codeMirror.setSize($('.admin-editor-section').height(), code_area_height);
+  }
+}

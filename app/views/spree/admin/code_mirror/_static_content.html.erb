@@ -1,0 +1,7 @@
+<% if Spree::Config.show_raw_product_description %>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(event) {
+     new SpreeCodeMirror("page_body").init();
+    });
+  </script>
+<% end %>

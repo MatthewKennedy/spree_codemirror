@@ -1,0 +1,7 @@
+<% if SpreePages::Config.use_raw_body_text %>
+  <script>
+    document.addEventListener('DOMContentLoaded', function(event) {
+     new SpreeCodeMirror("page_content").init();
+    });
+  </script>
+<% end %>
